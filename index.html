@@ -83,8 +83,15 @@
             <option value="4">Fourth Year</option>
         </select>
 
-        <button type="submit">Submit</button>
+        <button id="btn" type="submit" onclick="handleClick()">Submit</button>
     </form>
+
+    <script>
+        const btn = document.getElementById("btn")
+        function handleClick(){
+            alert("You're submitted the form successfully!")
+        }
+    </script>
 
 </body>
 </html>
