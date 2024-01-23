@@ -61,8 +61,7 @@
     </style>
 </head>
 <body>
-
-    <form>
+    <form action="success.html">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -83,14 +82,10 @@
             <option value="4">Fourth Year</option>
         </select>
 
-        <button id="btn" type="submit" onclick="handleClick()">Submit</button>
+        <button id="btn" type="submit">Submit</button>
     </form>
+});
 
-    <script>
-        const btn = document.getElementById("btn")
-        function handleClick(){
-            alert("You're submitted the form successfully!")
-        }
     </script>
 
 </body>
