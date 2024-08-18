@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter name" id="name" /> 
+    <button id="n" onclick="func()">click</button>
+    <h1>Hello</h1> 
+    <!--  after onclick n() hello+ name-->
+    <button onclick="n()">updte</button>
+    <script>
+        let name = ""
+        
+        function func()
+        {
+            name=document.getElementById("name").value;
+            console.log(name)
+            
+        }
+        function n()
+        {
+            const c = document.getElementsByTagName("h1")[0];
+
+            c.textContent = "hello".concat(name)
+            console.log(c.textContent)
+        }
+    </script>
+</body>
+</html
